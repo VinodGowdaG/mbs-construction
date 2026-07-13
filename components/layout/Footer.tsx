@@ -9,9 +9,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   const companyLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Gallery", href: "#gallery" },
+    { name: "About Us", href: "/about" },
+    { name: "Projects", href: "/projects" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "#contact" },
   ];
 

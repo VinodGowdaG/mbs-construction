@@ -18,6 +18,7 @@ import ServiceBreadcrumb from "@/components/services/ServiceBreadcrumb";
 import ServiceQuickNav from "@/components/services/ServiceQuickNav";
 import WhyChooseUs from "@/components/services/WhyChooseUs";
 import ServiceProjects from "@/components/services/ServiceProjects";
+import ServiceSchema from "@/components/seo/ServiceSchema";
 
 interface Props {
   params: Promise<{
@@ -76,7 +77,13 @@ export default async function ServicePage({ params }: Props) {
     notFound();
   }
 
-  return (
+  return (<>
+  <ServiceSchema
+    name={service.title}
+    description={service.shortDescription ?? service.metaDescription}
+    url={`https://www.mbsconstruction.in/services/${service.slug}`}
+  />
+
     <main className="bg-white">
 
       <ServiceBreadcrumb
@@ -129,5 +136,6 @@ export default async function ServicePage({ params }: Props) {
       <ServiceCTA />
 
     </main>
+    </>
   );
 }

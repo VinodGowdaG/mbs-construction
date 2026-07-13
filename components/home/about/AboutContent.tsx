@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 // using a mailto link for direct email contact
 import { ArrowRight } from "lucide-react";
 import FeatureCard from "./FeatureCard";
@@ -58,17 +59,13 @@ export default function AboutContent() {
       </div>
 
       {/* CTA */}
-      <a
-        href={`mailto:mbsroofings@gmail.com?subject=${encodeURIComponent(
-          "Want to Know about Your Company profile or details or projects"
-        )}`}
+      <Link
+        href="/about"
         className="mt-10 inline-flex items-center gap-3 rounded-full bg-[#D62828] px-7 py-4 font-semibold text-white transition duration-300 hover:bg-[#b71f1f]"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         Know More About Us
         <ArrowRight size={20} />
-      </a>
+      </Link>
     </motion.div>
   );
 }

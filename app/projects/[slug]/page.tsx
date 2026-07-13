@@ -13,6 +13,7 @@ import RelatedProjects from "@/components/projects/RelatedProjects";
 import ProjectCTA from "@/components/projects/ProjectCTA";
 import ProjectBreadcrumb from "@/components/projects/ProjectBreadcrumb";
 import ProjectNavigation from "@/components/projects/ProjectNavigation";
+import ProjectSchema from "@/components/seo/ProjectSchema";
 
 interface Props {
   params: Promise<{
@@ -32,55 +33,64 @@ export default async function ProjectDetails({ params }: Props) {
   }
 
   return (
-    <main className="bg-white">
+    <>
+      <ProjectSchema
+        name={project.title}
+        description={project.description}
+        image={project.image}
+        url={`https://www.mbsconstruction.in/projects/${project.slug}`}
+        location={project.location}
+        client={project.client}
+        year={project.year}
+      />
+      <main className="bg-white">
+        <div className="mx-auto max-w-7xl px-6 pt-32">
+          <ProjectBreadcrumb title={project.title} />
+        </div>
 
-  <div className="mx-auto max-w-7xl px-6 pt-32">
-    <ProjectBreadcrumb title={project.title} />
-  </div>
+        <ProjectHero
+          title={project.title}
+          image={project.image}
+          location={project.location}
+          category={project.category}
+        />
 
-  <ProjectHero
-    title={project.title}
-    image={project.image}
-    location={project.location}
-    category={project.category}
-  />
+        <ProjectOverview
+          overview={project.overview}
+          description={project.description}
+          client={project.client}
+          location={project.location}
+          category={project.category}
+          area={project.area}
+          year={project.year}
+        />
 
-  <ProjectOverview
-    overview={project.overview}
-    description={project.description}
-    client={project.client}
-    location={project.location}
-    category={project.category}
-    area={project.area}
-    year={project.year}
-  />
+        <ProjectSpecifications
+          specifications={project.specifications}
+        />
 
-  <ProjectSpecifications
-    specifications={project.specifications}
-  />
+        <ProjectFeatures
+          features={project.features}
+        />
 
-  <ProjectFeatures
-    features={project.features}
-  />
+        <ProjectGallery
+          title={project.title}
+          gallery={project.gallery}
+        />
 
-  <ProjectGallery
-    title={project.title}
-    gallery={project.gallery}
-  />
+        <RelatedProjects
+          currentSlug={project.slug}
+          projects={featuredProjects}
+        />
 
-  <RelatedProjects
-    currentSlug={project.slug}
-    projects={featuredProjects}
-  />
+        <ProjectNavigation
+          currentSlug={project.slug}
+          projects={featuredProjects}
+        />
 
-  <ProjectNavigation
-  currentSlug={project.slug}
-  projects={featuredProjects}
-/>
-
-  <ProjectCTA />
-
-</main>
+        <ProjectCTA />
+      </main>
+    </>
   );
 }
 

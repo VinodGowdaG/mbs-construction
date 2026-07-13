@@ -12,39 +12,66 @@ import Industries from "@/components/home/industries/Industries";
 import Certifications from "@/components/about/Certifications";
 import AboutCTA from "@/components/about/AboutCTA";
 
+import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
+
 export const metadata: Metadata = {
   title: "About MBS Construction | Industrial Construction Company",
 
   description:
     "Learn about MBS Construction, our journey, mission, vision, expertise and commitment to delivering high-quality industrial infrastructure across Karnataka.",
+
+  alternates: {
+    canonical: "https://www.mbsconstruction.in/about",
+  },
+
+  openGraph: {
+    title: "About MBS Construction",
+    description:
+      "Learn about MBS Construction, our journey, mission, vision, expertise and commitment to delivering high-quality industrial infrastructure across Karnataka.",
+    url: "https://www.mbsconstruction.in/about",
+    type: "website",
+  },
 };
 
 export default function AboutPage() {
   return (
-    <main className="bg-white">
+    <>
+      <BreadcrumbSchema
+        items={[
+          {
+            name: "Home",
+            url: "https://www.mbsconstruction.in",
+          },
+          {
+            name: "About",
+            url: "https://www.mbsconstruction.in/about",
+          },
+        ]}
+      />
 
-      <AboutBreadcrumb />
+      <main className="bg-white">
+        <AboutBreadcrumb />
 
-      <AboutHero />
+        <AboutHero />
 
-      <CompanyStory />
+        <CompanyStory />
 
-      <CompanyStats />
+        <CompanyStats />
 
-      <MissionVision />
+        <MissionVision />
 
-      <OurValues />
+        <OurValues />
 
-      <CompanyTimeline />
+        <CompanyTimeline />
 
-      <WhyChooseMBS />
+        <WhyChooseMBS />
 
-      <Industries />
+        <Industries />
 
-      <Certifications />
+        <Certifications />
 
-      <AboutCTA />
-
-    </main>
+        <AboutCTA />
+      </main>
+    </>
   );
 }
