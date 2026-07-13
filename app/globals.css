@@ -1,0 +1,19 @@
+@import "swiper/css";
+@import "swiper/css/autoplay";
+@import "tailwindcss";
+
+
+:root{
+  --primary:#0B4EA2;
+  --secondary:#D62828;
+
+  --dark:#0F172A;
+  --light:#F8FAFC;
+
+  --text:#1F2937;
+  --border:#E5E7EB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
