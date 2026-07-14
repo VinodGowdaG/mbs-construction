@@ -2,7 +2,7 @@ export const categoryData = [
   {
     id: 1,
     title: "Warehouse Construction",
-    image: "/images/gallery/categories/warehouse.jpg",
+    image: "/images/gallery/categories/warehouse.png",
     description:
       "Industrial warehouses, logistics parks and storage facilities.",
     href: "/gallery/images?category=Warehouse",
@@ -10,7 +10,7 @@ export const categoryData = [
   {
     id: 2,
     title: "PEB Buildings",
-    image: "/images/gallery/categories/peb.jpg",
+    image: "/images/gallery/categories/peb.png",
     description:
       "Pre-Engineered Buildings for factories and industries.",
     href: "/gallery/images?category=PEB",
@@ -18,7 +18,7 @@ export const categoryData = [
   {
     id: 3,
     title: "Industrial Roofing",
-    image: "/images/gallery/categories/roofing.jpg",
+    image: "/images/gallery/categories/roofing.png",
     description:
       "Metal roofing, UPVC roofing and insulation solutions.",
     href: "/gallery/images?category=Roofing",
@@ -26,7 +26,7 @@ export const categoryData = [
   {
     id: 4,
     title: "Steel Fabrication",
-    image: "/images/gallery/categories/steel.jpg",
+    image: "/images/gallery/categories/steel.png",
     description:
       "Heavy steel structures and fabrication projects.",
     href: "/gallery/images?category=Steel",
@@ -34,7 +34,7 @@ export const categoryData = [
   {
     id: 5,
     title: "Civil Construction",
-    image: "/images/gallery/categories/civil.jpg",
+    image: "/images/gallery/categories/civil.png",
     description:
       "Commercial, industrial and infrastructure projects.",
     href: "/gallery/images?category=Civil",
@@ -42,7 +42,7 @@ export const categoryData = [
   {
     id: 6,
     title: "Commercial Buildings",
-    image: "/images/gallery/categories/commercial.jpg",
+    image: "/images/gallery/categories/commercial.png",
     description:
       "Office buildings, showrooms and commercial complexes.",
     href: "/gallery/images?category=Commercial",

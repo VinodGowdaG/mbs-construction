@@ -3,7 +3,7 @@ export const imageData = [
     id: 1,
     title: "Industrial Warehouse",
     category: "Warehouse",
-    image: "/images/gallery/projects/warehouse-1.jpg",
+    image: "/images/gallery/projects/warehouse-1.png",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const imageData = [
     id: 5,
     title: "Commercial Building",
     category: "Civil",
-    image: "/images/gallery/projects/civil-1.jpg",
+    image: "/images/gallery/projects/civil-1.png",
   },
   {
     id: 6,
@@ -39,7 +39,7 @@ export const imageData = [
     id: 7,
     title: "PEB Installation",
     category: "PEB",
-    image: "/images/gallery/projects/peb-2.",
+    image: "/images/gallery/projects/peb-2.png",
   },
   {
     id: 8,

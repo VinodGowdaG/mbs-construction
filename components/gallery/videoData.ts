@@ -31,14 +31,14 @@ export const videoData = [
     id: 5,
     title: "Steel Structure Fabrication",
     category: "Steel",
-    thumbnail: "/images/gallery/videos/steel.jpg",
+    thumbnail: "/images/gallery/videos/steel.png",
     url: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
   },
   {
     id: 6,
     title: "Civil Construction Project",
     category: "Civil",
-    thumbnail: "/images/gallery/videos/civil.jpg",
+    thumbnail: "/images/gallery/videos/civil.png",
     url: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
   },
 ];
