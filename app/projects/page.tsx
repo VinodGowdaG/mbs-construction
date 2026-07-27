@@ -37,7 +37,7 @@ export default function ProjectsPage() {
   });
 
   return (
-    <main className="bg-white">
+    <main className="bg-white pt-24 lg:pt-28">
       <ProjectsHero />
 
         <ProjectsStats />

@@ -33,7 +33,7 @@ export default function ServiceBreadcrumb({
         <ChevronRight size={16} />
 
         <span className="font-semibold text-[#D62828]">
-          {title}
+          {title}  
         </span>
 
       </div>

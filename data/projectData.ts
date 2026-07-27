@@ -3,7 +3,7 @@ export const featuredProjects = [
     id: 1,
     title: "Industrial Warehouse",
     slug: "industrial-warehouse",
-    location: "Bengaluru",
+    location: "Nelamangala, Bengaluru",
     service: "warehouse-construction",
     image: "/images/projects/warehouse-1.png",
     category: "Warehouse",
@@ -16,18 +16,19 @@ export const featuredProjects = [
       "/images/projects/warehouse-2.png",
       "/images/projects/warehouse-3.png",
     ],
-    client: "ABC Industries",
+    client: "Vijay Kumar",
     year: "2025",
-    area: "45,000 Sq.ft",
+    area: "1,00,000+ Sq.ft",
 
     specifications: {
-  area: "45,000 Sq.ft",
+  area: "1,00,000+ Sq.ft",
   structure: "PEB Steel Structure",
   roofing: "Color Coated Roofing",
-  duration: "5 Months",
+  duration: "8 Months",
 },
 
 features: [
+  "Civil Construction",
   "High Strength Steel",
   "Premium Roofing",
   "Fast Construction",
@@ -41,7 +42,7 @@ features: [
     id: 2,
     title: "PEB Factory Building",
     slug: "peb-factory",
-    location: "Tumakuru",
+    location: "Dabaspete, Bengaluru",
     service: "pre-engineered-buildings",
     image: "/images/projects/warehouse-2.png",
     category: "PEB",
@@ -54,7 +55,7 @@ features: [
       "/images/projects/peb-1.png",
       "/images/projects/steel-1.png",
     ],
-    client: "XYZ Manufacturing",
+    client: "Reddy",
     year: "2024",
     area: "60,000 Sq.ft",
 
@@ -115,9 +116,9 @@ features: [
 
   {
     id: 4,
-    title: "Industrial Roofing",
+    title: "Multi-storey structure",
     slug: "industrial-roofing",
-    location: "Hubballi",
+    location: "Hirisave, Hassan",
     service: "roofing-solutions",
     image: "/images/projects/peb-1.png",
     category: "Roofing",
@@ -130,7 +131,7 @@ features: [
       "/images/projects/steel-1.png",
       "/images/projects/warehouse-1.png",
     ],
-    client: "Steel Corp",
+    client: "Raghavendra",
     year: "2024",
     area: "22,000 Sq.ft",
 

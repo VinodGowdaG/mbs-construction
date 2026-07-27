@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="bg-white">
+    <main className="bg-white pt-20 lg:pt-28">
 
       <ContactBreadcrumb />
 

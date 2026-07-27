@@ -9,7 +9,7 @@ import { ArrowUpRight, MapPin } from "lucide-react";
 const projects = [
   {
     title: "Industrial Warehouse",
-    location: "Bengaluru",
+    location: "Nelamangala,Bengaluru",
     image: "/images/projects/warehouse-1.png",
     href: "/projects/industrial-warehouse",
   },
@@ -26,8 +26,8 @@ const projects = [
     href: "/projects/logistics-warehouse",
   },
   {
-    title: "Industrial Roofing",
-    location: "Hubballi",
+    title: "Multi-Storey Complex",
+    location: "Hirisave, Hassan",
     image: "/images/projects/peb-1.png",
     href: "/projects/industrial-roofing",
   },

@@ -48,30 +48,30 @@ export default function AboutPage() {
           },
         ]}
       />
+        <main className="bg-white pt-24 lg:pt-28">
+          <AboutBreadcrumb />
 
-      <main className="bg-white">
-        <AboutBreadcrumb />
+          <AboutHero />
 
-        <AboutHero />
+          <CompanyStory />
 
-        <CompanyStory />
+          <CompanyStats />
 
-        <CompanyStats />
+          <MissionVision />
 
-        <MissionVision />
+          <OurValues />
 
-        <OurValues />
+          <CompanyTimeline />
 
-        <CompanyTimeline />
+          <WhyChooseMBS />
 
-        <WhyChooseMBS />
+          <Industries />
 
-        <Industries />
+          <Certifications />
 
-        <Certifications />
-
-        <AboutCTA />
-      </main>
+          <AboutCTA />
+        </main>
+      
     </>
   );
 }

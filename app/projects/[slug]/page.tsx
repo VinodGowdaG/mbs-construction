@@ -11,7 +11,6 @@ import ProjectSpecifications from "@/components/projects/ProjectSpecifications";
 import ProjectFeatures from "@/components/projects/ProjectFeatures";
 import RelatedProjects from "@/components/projects/RelatedProjects";
 import ProjectCTA from "@/components/projects/ProjectCTA";
-import ProjectBreadcrumb from "@/components/projects/ProjectBreadcrumb";
 import ProjectNavigation from "@/components/projects/ProjectNavigation";
 import ProjectSchema from "@/components/seo/ProjectSchema";
 
@@ -44,9 +43,6 @@ export default async function ProjectDetails({ params }: Props) {
         year={project.year}
       />
       <main className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 pt-32">
-          <ProjectBreadcrumb title={project.title} />
-        </div>
 
         <ProjectHero
           title={project.title}
