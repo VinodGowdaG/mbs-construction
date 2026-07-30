@@ -34,9 +34,9 @@ const timeline = [
   },
   {
     year: "2021",
-    title: "50+ Projects Completed",
+    title: "100+ Projects Completed",
     description:
-      "Reached the milestone of delivering over 50+ successful industrial and commercial construction projects.",
+      "Reached the milestone of delivering over 100+ successful industrial and commercial construction projects.",
     icon: Award,
   },
   {

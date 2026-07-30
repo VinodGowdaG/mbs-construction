@@ -162,7 +162,7 @@ export default function Footer() {
             <p className="mt-2 text-sm">
               Developed by{" "}
               <Link
-                href="https://github.com/VinodGowdaG"
+                href="https://vinodgowda-portfolio.vercel.app/"
                 className="text-[#D62828] hover:underline"
               >
                 Vinodgowda G

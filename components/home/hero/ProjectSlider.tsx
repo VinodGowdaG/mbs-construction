@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "PEB Factory Building",
-    location: "Tumakuru",
+    location: "Dabaspete, Bengaluru",
     image: "/images/projects/warehouse-2.png",
     href: "/projects/peb-factory",
   },
