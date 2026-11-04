@@ -12,7 +12,7 @@ export const contactData = {
     address:
       "Bengaluru, Karnataka, India",
 
-    phone: "+91 8147826165",
+    phone: "+91 8147826169",
 
     email: "info@mbsconstruction.in",
 

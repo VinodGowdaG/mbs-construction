@@ -1,5 +1,5 @@
+
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/layout/Navbar";
@@ -8,12 +8,8 @@ import Footer from "@/components/layout/Footer";
 import OrganizationSchema from "@/components/seo/OrganizationSchema";
 import WebsiteSchema from "@/components/seo/WebsiteSchema";
 
-const inter = Inter({
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.mbsconstruction.in"),
+  metadataBase: new URL("https://mbsconstructions.com"),
 
   title: {
     default:
@@ -26,6 +22,16 @@ export const metadata: Metadata = {
 
   keywords: [
     "PEB",
+    "Roofing Solutions",
+    "Civil constructions in Bangalore",
+    "PEB warehouse construction Bangalore",
+    "Commercial building construction company Bangalore",
+    "Pre-Engineered Building",
+    "PEB Construction",
+    "PEB construction company in Bangalore",
+    "PEB manufacturers in Bangalore",
+    "PEB suppliers in Bangalore",
+    "Pre Engineered Building manufacturers Bangalore",
     "Warehouse Construction",
     "Industrial Shed",
     "Factory Building",
@@ -37,15 +43,8 @@ export const metadata: Metadata = {
   ],
 
   applicationName: "MBS Construction",
-
-  authors: [
-    {
-      name: "MBS Construction",
-    },
-  ],
-
+  authors: [{ name: "MBS Construction" }],
   creator: "MBS Construction",
-
   publisher: "MBS Construction",
 
   robots: {
@@ -67,7 +66,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://www.mbsconstruction.in",
+    url: "https://mbsconstructions.com",
     siteName: "MBS Construction",
 
     title:
@@ -112,7 +111,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <OrganizationSchema />
         <WebsiteSchema />
 
@@ -121,7 +120,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }

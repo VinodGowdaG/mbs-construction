@@ -185,7 +185,7 @@ export const ongoingProjects: OngoingProject[] = [
     googleMapEmbed:
       "https://www.google.com/maps/embed?pb=",
 
-    client: "XYZ Industries",
+    client: "Suresh Industries",
 
     consultant: "MBS Construction",
 

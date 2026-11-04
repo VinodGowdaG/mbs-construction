@@ -176,7 +176,7 @@ export default function ContactInfo() {
             </p>
 
             <Link
-              href="https://wa.me/918147826165"
+              href="https://wa.me/918147826169"
               target="_blank"
               className="mt-8 inline-flex rounded-full bg-[#D62828] px-8 py-4 font-semibold transition hover:bg-red-700"
             >
