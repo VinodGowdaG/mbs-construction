@@ -23,6 +23,10 @@ export const navigation = [
     href: "/projects",
   },
   {
+    name: "Videos",
+    href: "/videos",
+  },
+  {
     name: "Contact",
     href: "/contact",
   },
