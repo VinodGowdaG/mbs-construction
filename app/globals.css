@@ -3,11 +3,9 @@
 @import "tailwindcss";
 
 
-/* css-lint disable=unknownAtRules */
 @source not "../.next";
 @source not "../.open-next";
 @source not "../node_modules";
-/* css-lint enable=unknownAtRules */
 
 
 

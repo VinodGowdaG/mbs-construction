@@ -61,35 +61,38 @@ export default function MediaHeroSlider() {
 
   const activeSlide = slides[current];
 
-  // NEXT SLIDE
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % slides.length);
   };
 
-  // PREVIOUS SLIDE
   const previousSlide = () => {
     setCurrent(
       (prev) => (prev - 1 + slides.length) % slides.length
     );
   };
 
-  // AUTOMATIC SLIDE CHANGE
+  // Automatically advance image and video slides.
   useEffect(() => {
     const duration =
       slides[current].type === "video" ? 20000 : 7000;
 
-    const timer = setTimeout(() => {
+    const timer = window.setTimeout(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, duration);
 
-    return () => clearTimeout(timer);
+    return () => window.clearTimeout(timer);
   }, [current]);
 
   return (
     <section
       id="media-slider"
       aria-label="MBS Constructions project showcase"
-      className="relative h-[100svh] min-h-[600px] w-full overflow-hidden bg-black text-white"
+      className="
+        relative w-full overflow-hidden bg-black text-white
+        h-[100svh] min-h-[480px]
+        md:h-[85svh] md:min-h-[600px]
+        lg:h-[100svh]
+      "
     >
       {/* BACKGROUND IMAGE OR VIDEO */}
       <div className="absolute inset-0">
@@ -101,7 +104,10 @@ export default function MediaHeroSlider() {
             playsInline
             preload="metadata"
             onEnded={nextSlide}
-            className="h-full w-full object-cover"
+            className="
+              absolute inset-0 h-full w-full
+              object-cover object-center
+            "
           >
             <source
               src={activeSlide.src}
@@ -113,7 +119,10 @@ export default function MediaHeroSlider() {
             key={activeSlide.src}
             src={activeSlide.src}
             alt={activeSlide.title}
-            className="h-full w-full object-cover"
+            className="
+              absolute inset-0 h-full w-full
+              object-cover object-center
+            "
           />
         )}
       </div>
@@ -121,44 +130,99 @@ export default function MediaHeroSlider() {
       {/* DARK OVERLAY - IMAGE SLIDES ONLY */}
       {activeSlide.type === "image" && (
         <>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/10" />
+          <div
+            className="
+              absolute inset-0
+              bg-gradient-to-t
+              from-black/85 via-black/45 to-black/20
+              md:bg-gradient-to-r
+              md:from-black/80 md:via-black/45 md:to-black/10
+            "
+          />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
+          <div
+            className="
+              absolute inset-0
+              bg-gradient-to-t
+              from-black/40 via-transparent to-black/10
+            "
+          />
         </>
       )}
 
       {/* TEXT CONTENT - IMAGE SLIDES ONLY */}
       {activeSlide.type === "image" && (
-        <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6 lg:px-12">
-          <div className="max-w-3xl">
-
+        <div
+          className="
+            relative z-10 mx-auto flex h-full w-full
+            max-w-7xl items-center
+            px-6 pt-20 pb-28
+            sm:px-10
+            md:px-16 md:pt-16 md:pb-20
+            lg:px-20
+          "
+        >
+          <div className="w-full max-w-3xl">
             {/* TAG */}
-            <span className="mb-6 inline-block rounded-full bg-red-600 px-5 py-2 text-xs font-bold tracking-[3px]">
+            <span
+              className="
+                mb-4 inline-block rounded-full bg-red-600
+                px-3 py-2 text-[9px] font-bold
+                tracking-[1.5px]
+                sm:px-4 sm:text-[10px]
+                sm:tracking-[2px]
+                md:mb-6 md:px-5 md:text-xs
+                md:tracking-[3px]
+              "
+            >
               {activeSlide.tag}
             </span>
 
             {/* TITLE */}
             <h2
               key={activeSlide.title}
-              className="mb-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-7xl"
+              className="
+                mb-4 max-w-3xl font-extrabold
+                leading-[1.12] tracking-tight
+                text-[clamp(1.75rem,7vw,2.5rem)]
+                sm:text-4xl
+                md:mb-6 md:text-5xl
+                lg:text-6xl xl:text-7xl
+              "
             >
               {activeSlide.title}
             </h2>
 
             {/* DESCRIPTION */}
-            <p className="mb-9 max-w-xl text-base leading-8 text-white/85 sm:text-lg">
+            <p
+              className="
+                mb-6 max-w-xl text-sm
+                leading-6 text-white/90
+                sm:text-base sm:leading-7
+                md:mb-9 md:text-lg md:leading-8
+              "
+            >
               {activeSlide.description}
             </p>
 
             {/* BUTTON */}
             <a
               href={activeSlide.buttonLink}
-              className="inline-flex items-center gap-3 rounded-full bg-red-600 px-8 py-4 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-red-600"
+              className="
+                inline-flex min-h-11 items-center
+                justify-center gap-3 rounded-full
+                bg-red-600 px-5 py-3
+                text-xs font-bold text-white
+                transition-all duration-300
+                hover:-translate-y-1
+                hover:bg-white hover:text-red-600
+                sm:px-7 sm:text-sm
+                md:px-8 md:py-4
+              "
             >
               {activeSlide.buttonText}
-              <span>→</span>
+              <span aria-hidden="true">→</span>
             </a>
-
           </div>
         </div>
       )}
@@ -168,7 +232,16 @@ export default function MediaHeroSlider() {
         type="button"
         onClick={previousSlide}
         aria-label="Previous slide"
-        className="absolute left-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-black/30 text-xl transition hover:bg-red-600 sm:left-8 sm:h-14 sm:w-14"
+        className="
+          absolute bottom-20 left-5 z-20
+          flex h-11 w-11 items-center
+          justify-center rounded-full
+          border border-white/40 bg-black/40
+          text-lg transition hover:bg-red-600
+          md:bottom-auto md:left-5 md:top-1/2
+          md:h-12 md:w-12 md:-translate-y-1/2
+          lg:left-8 lg:h-14 lg:w-14
+        "
       >
         &#10094;
       </button>
@@ -178,13 +251,29 @@ export default function MediaHeroSlider() {
         type="button"
         onClick={nextSlide}
         aria-label="Next slide"
-        className="absolute right-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-black/30 text-xl transition hover:bg-red-600 sm:right-8 sm:h-14 sm:w-14"
+        className="
+          absolute bottom-20 right-5 z-20
+          flex h-11 w-11 items-center
+          justify-center rounded-full
+          border border-white/40 bg-black/40
+          text-lg transition hover:bg-red-600
+          md:bottom-auto md:right-5 md:top-1/2
+          md:h-12 md:w-12 md:-translate-y-1/2
+          lg:right-8 lg:h-14 lg:w-14
+        "
       >
         &#10095;
       </button>
 
       {/* BOTTOM SLIDE INDICATORS */}
-      <div className="absolute bottom-9 left-0 right-0 z-20 flex items-center justify-center gap-3">
+      <div
+        className="
+          absolute bottom-8 left-0 right-0
+          z-20 flex items-center
+          justify-center gap-3
+          md:bottom-9
+        "
+      >
         {slides.map((slide, index) => (
           <button
             key={slide.src}
@@ -194,17 +283,29 @@ export default function MediaHeroSlider() {
             aria-current={
               current === index ? "true" : undefined
             }
-            className={`h-2 rounded-full transition-all duration-300 ${
-              current === index
-                ? "w-10 bg-red-600"
-                : "w-3 bg-white/60 hover:bg-white"
-            }`}
-          />
+            className="
+              flex h-8 items-center justify-center
+            "
+          >
+            <span
+              className={`block h-2 rounded-full transition-all duration-300 ${
+                current === index
+                  ? "w-10 bg-red-600"
+                  : "w-3 bg-white/60 hover:bg-white"
+              }`}
+            />
+          </button>
         ))}
       </div>
 
-      {/* SLIDE COUNTER */}
-      <div className="absolute bottom-8 right-8 z-20 hidden items-center gap-3 text-sm font-semibold sm:flex">
+      {/* SLIDE COUNTER - DESKTOP ONLY */}
+      <div
+        className="
+          absolute bottom-8 right-8 z-20
+          hidden items-center gap-3
+          text-sm font-semibold lg:flex
+        "
+      >
         <span className="text-xl text-white">
           {String(current + 1).padStart(2, "0")}
         </span>
@@ -215,7 +316,6 @@ export default function MediaHeroSlider() {
           {String(slides.length).padStart(2, "0")}
         </span>
       </div>
-
     </section>
   );
 }

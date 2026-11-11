@@ -2,8 +2,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import WhatsAppButton from "@/components/WhatsAppButton";
+import MBSChatbot from "@/components/MBSChatbot";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+
 
 import OrganizationSchema from "@/components/seo/OrganizationSchema";
 import WebsiteSchema from "@/components/seo/WebsiteSchema";
@@ -83,6 +86,8 @@ export default function RootLayout({
         <WebsiteSchema />
         <Navbar />
         {children}
+        <MBSChatbot />
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>
