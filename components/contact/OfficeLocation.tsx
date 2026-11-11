@@ -153,7 +153,7 @@ export default function OfficeLocation() {
                     </h3>
 
                     <p className="mt-2 text-slate-600">
-                      info@mbsconstruction.in
+                      mbsroofings@gmail.com
                     </p>
                   </div>
                 </div>

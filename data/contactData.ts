@@ -14,9 +14,9 @@ export const contactData = {
 
     phone: "+91 8147826169",
 
-    email: "info@mbsconstruction.in",
+    email: "mbsroofings@gmail.com",
 
-    website: "www.mbsconstruction.in",
+    website: "www.mbsconstructions.com",
   },
 
   businessHours: [

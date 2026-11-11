@@ -118,7 +118,7 @@ export default function ContactHero() {
             Email Us
           </h3>
           <p className="mt-3 text-slate-600">
-            info@mbsconstruction.in
+            mbsroofings@gmail.com
           </p>
         </div>
 
