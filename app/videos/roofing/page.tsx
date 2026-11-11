@@ -41,7 +41,7 @@ export default function RoofingVideoPage() {
       "Watch industrial roofing installation, roofing solutions and project work by MBS Constructions.",
 
     // Add the actual first publication date here when known.
-    // uploadDate: "YYYY-MM-DD",
+    uploadDate: "2026-11-11",
 
     thumbnailUrl: [
       `${siteUrl}/images/video-thumbnails/roofing.jpg`,
