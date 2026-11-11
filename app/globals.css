@@ -3,6 +3,14 @@
 @import "tailwindcss";
 
 
+/* css-lint disable=unknownAtRules */
+@source not "../.next";
+@source not "../.open-next";
+@source not "../node_modules";
+/* css-lint enable=unknownAtRules */
+
+
+
 :root{
   --primary:#0B4EA2;
   --secondary:#D62828;
@@ -19,4 +27,30 @@ html {
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* MBS Media Slider Animation */
+
+@keyframes mbsFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#media-slider img,
+#media-slider video {
+  animation: mbsFadeIn 1s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #media-slider img,
+  #media-slider video {
+    animation: none;
+  }
 }

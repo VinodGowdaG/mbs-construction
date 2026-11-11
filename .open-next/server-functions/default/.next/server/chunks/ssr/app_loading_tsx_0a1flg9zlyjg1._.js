@@ -1,3 +1,0 @@
-module.exports=[63588,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function(){return(0,b.jsx)("main",{className:"flex min-h-screen items-center justify-center bg-white",children:(0,b.jsxs)("div",{className:"flex flex-col items-center",children:[(0,b.jsx)("div",{className:"h-16 w-16 animate-spin rounded-full border-4 border-[#0B4EA2] border-t-[#D62828]"}),(0,b.jsx)("h2",{className:"mt-6 text-2xl font-bold text-[#0B4EA2]",children:"MBS Construction"}),(0,b.jsx)("p",{className:"mt-2 text-gray-600",children:"Loading..."})]})})}])},45538,function(a){a.n(a.i(63588))}];
-
-//# sourceMappingURL=app_loading_tsx_0a1flg9zlyjg1._.js.map

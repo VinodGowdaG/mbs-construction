@@ -13,39 +13,17 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "MBS Construction | PEB, Warehouse & Industrial Construction Company",
-    template: "%s | MBS Construction",
+      "MBS Constructions | PEB & Industrial Construction in Bengaluru",
+    template: "%s | MBS Constructions",
   },
 
   description:
-    "MBS Construction is a leading Pre-Engineered Building (PEB), Warehouse Construction, Industrial Shed, Steel Fabrication and Roofing Solutions company in Karnataka.",
+    "MBS Constructions provides PEB buildings, warehouse construction, industrial sheds, steel fabrication and roofing solutions in Bengaluru and across Karnataka.",
 
-  keywords: [
-    "PEB",
-    "Roofing Solutions",
-    "Civil constructions in Bangalore",
-    "PEB warehouse construction Bangalore",
-    "Commercial building construction company Bangalore",
-    "Pre-Engineered Building",
-    "PEB Construction",
-    "PEB construction company in Bangalore",
-    "PEB manufacturers in Bangalore",
-    "PEB suppliers in Bangalore",
-    "Pre Engineered Building manufacturers Bangalore",
-    "Warehouse Construction",
-    "Industrial Shed",
-    "Factory Building",
-    "Steel Fabrication",
-    "Roofing Contractor",
-    "PEB Company Karnataka",
-    "Industrial Construction",
-    "MBS Construction",
-  ],
-
-  applicationName: "MBS Construction",
-  authors: [{ name: "MBS Construction" }],
-  creator: "MBS Construction",
-  publisher: "MBS Construction",
+  applicationName: "MBS Constructions",
+  authors: [{ name: "MBS Constructions" }],
+  creator: "MBS Constructions",
+  publisher: "MBS Constructions",
 
   robots: {
     index: true,
@@ -59,41 +37,30 @@ export const metadata: Metadata = {
     },
   },
 
-  alternates: {
-    canonical: "/",
-  },
-
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://mbsconstructions.com",
-    siteName: "MBS Construction",
-
+    siteName: "MBS Constructions",
     title:
-      "MBS Construction | PEB, Warehouse & Industrial Construction Company",
-
+      "MBS Constructions | PEB & Industrial Construction in Bengaluru",
     description:
-      "Leading PEB, Warehouse, Factory Building & Roofing Solutions company in Karnataka.",
-
+      "Explore PEB buildings, warehouse construction, industrial sheds, steel fabrication and roofing solutions from MBS Constructions.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "MBS Construction",
+        alt: "MBS Constructions - PEB and Industrial Construction",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-
     title:
-      "MBS Construction | PEB, Warehouse & Industrial Construction Company",
-
+      "MBS Constructions | PEB & Industrial Construction in Bengaluru",
     description:
-      "Leading Industrial Construction & PEB Company in Karnataka.",
-
+      "PEB buildings, warehouse construction, industrial sheds and roofing solutions across Karnataka.",
     images: ["/images/og-image.jpg"],
   },
 
@@ -114,11 +81,8 @@ export default function RootLayout({
       <body>
         <OrganizationSchema />
         <WebsiteSchema />
-
         <Navbar />
-
         {children}
-
         <Footer />
       </body>
     </html>

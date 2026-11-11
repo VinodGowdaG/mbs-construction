@@ -37,7 +37,7 @@ export default async function ProjectDetails({ params }: Props) {
         name={project.title}
         description={project.description}
         image={project.image}
-        url={`https://www.mbsconstruction.in/projects/${project.slug}`}
+        url={`https://www.mbsconstructions.com/projects/${project.slug}`}
         location={project.location}
         client={project.client}
         year={project.year}

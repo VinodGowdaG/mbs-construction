@@ -81,7 +81,7 @@ export default async function ServicePage({ params }: Props) {
   <ServiceSchema
     name={service.title}
     description={service.shortDescription ?? service.metaDescription}
-    url={`https://www.mbsconstruction.in/services/${service.slug}`}
+    url={`https://www.mbsconstructions.com/services/${service.slug}`}
   />
 
     <main className="bg-white">

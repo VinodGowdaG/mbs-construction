@@ -15,21 +15,21 @@ import AboutCTA from "@/components/about/AboutCTA";
 import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "About MBS Construction | Industrial Construction Company",
+  title: "About Us | Construction & PEB Experts in Bengaluru",
 
   description:
-    "Learn about MBS Construction, our journey, mission, vision, expertise and commitment to delivering high-quality industrial infrastructure across Karnataka.",
+    "Learn about MBS Constructions, our expertise in PEB buildings, industrial construction, roofing, warehouse development and steel fabrication.",
 
   alternates: {
-    canonical: "https://www.mbsconstruction.in/about",
+    canonical: "https://mbsconstructions.com/about",
   },
 
   openGraph: {
-    title: "About MBS Construction",
-    description:
-      "Learn about MBS Construction, our journey, mission, vision, expertise and commitment to delivering high-quality industrial infrastructure across Karnataka.",
-    url: "https://www.mbsconstruction.in/about",
     type: "website",
+    url: "https://mbsconstructions.com/about",
+    title: "About MBS Constructions",
+    description:
+      "Discover our construction expertise and industrial infrastructure solutions across Karnataka.",
   },
 };
 
@@ -40,11 +40,11 @@ export default function AboutPage() {
         items={[
           {
             name: "Home",
-            url: "https://www.mbsconstruction.in",
+            url: "https://www.mbsconstructions.com",
           },
           {
             name: "About",
-            url: "https://www.mbsconstruction.in/about",
+            url: "https://www.mbsconstructions.com/about",
           },
         ]}
       />

@@ -6,7 +6,14 @@ export default function ServicesHero() {
   return (
     <section className="relative overflow-hidden bg-[#0B4EA2] pt-40 pb-28">
       {/* Background */}
-      <div className="absolute inset-0 bg-[url('/images/services/services-banner.png')] bg-cover bg-center opacity-20" />
+     
+<div
+  className="absolute inset-0 bg-cover bg-center opacity-20"
+  style={{
+    backgroundImage: "url('/images/services/services-banner.png')",
+  }}
+/>
+
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#0B4EA2]/95 via-[#0B4EA2]/85 to-[#D62828]/80" />
 

@@ -1,6 +1,8 @@
+
 import Hero from "@/components/home/hero/Hero";
 import ProjectSlider from "@/components/home/hero/ProjectSlider";
-import OngoingProjects from "@/components/home/ongoing-projects/OngoingProjects";
+import MediaHeroSlider from "@/components/home/hero/MediaHeroSlider";
+
 import About from "@/components/home/about/About";
 import MissionVision from "@/components/home/about/MissionVision";
 import Services from "@/components/home/services/Services";
@@ -14,14 +16,14 @@ import CTA from "@/components/home/cta/CTA";
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
+      {/* Main Hero */}
       <Hero />
 
       {/* Featured Projects */}
       <ProjectSlider />
 
-      {/*Ongoing Projects*/}
-      <OngoingProjects />
+      {/* Full Screen Image & Video Slider */}
+      <MediaHeroSlider />
 
       {/* About Section */}
       <About />
@@ -30,7 +32,7 @@ export default function Home() {
       <MissionVision />
 
       {/* Services */}
-      <Services /> 
+      <Services />
 
       {/* Why Choose Us */}
       <WhyChooseUs />
@@ -49,7 +51,6 @@ export default function Home() {
 
       {/* Contact CTA */}
       <CTA />
-
     </>
   );
 }
