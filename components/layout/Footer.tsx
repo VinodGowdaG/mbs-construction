@@ -39,7 +39,7 @@ export default function Footer() {
           <div>
 
             <Image
-              src="/images/logo-white.png"
+              src="/images/MBS_Construction-Logo.png"
               alt="MBS Construction"
               width={180}
               height={60}
@@ -182,21 +182,21 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://www.instagram.com/mbs_roofings_and_peb/"
+              href="https://www.instagram.com/mbs_constructions_/"
               className="rounded-full bg-slate-800 p-3 transition hover:bg-[#D62828]"
             >
               <FaInstagram size={18} />
             </Link>
 
             <Link
-              href="https://www.linkedin.com/in/mbs-groups-a420bb421/"
+              href="https://www.linkedin.com/company/143974101/"
               className="rounded-full bg-slate-800 p-3 transition hover:bg-[#D62828]"
             >
               <FaLinkedinIn size={18} />
             </Link>
 
             <Link
-              href="https://www.youtube.com/@MBSPROPERTIES-n8q"
+              href="https://www.youtube.com/@MBSCONSTRUCTIONS"
               className="rounded-full bg-slate-800 p-3 transition hover:bg-[#D62828]"
             >
               <FaYoutube size={18} />
